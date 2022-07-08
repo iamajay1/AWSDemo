@@ -27,8 +27,6 @@
   </dependencies>
   <build>
     <finalName>JenkinsWar</finalName>
-  </build>
-  <build>
   <pluginManagement>
    <plugins>
 <plugin>
