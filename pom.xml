@@ -72,18 +72,14 @@
                             <repository>  
                               <id>releases</id>
                               <!-- CHANGE HERE by your team jfrog server -->
-                              <contextUrl>http://3.91.79.123:8082/artifactory/libs-release-local/</contextUrl>
-                              <username>admin</username>
-                              <password>Ajay@9147</password>
-                              <repoKey>libs-release-local</repoKey>
+                              <url>http://3.91.79.123:8082/artifactory/libs-release-local/</url>
+                             
                             </repository>
                             <snapshotRepository>
                               <id>snapshots</id>
                               <!-- CHANGE HERE by your team jfrog server -->
-                              <contextUrl>http://3.91.79.123:8082/artifactory/libs-snapshot-local/</contextUrl>
-                              <username>admin</username>
-                              <password>Ajay@9147</password>
-                              <snapshotRepoKey>libs-snapshot-local</snapshotRepoKey>
+                              <url>http://3.91.79.123:8082/artifactory/libs-snapshot-local/</url>
+                              
                              </snapshotRepository>
                           </distributionManagement>
                           
