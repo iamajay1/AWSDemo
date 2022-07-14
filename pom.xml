@@ -3,8 +3,8 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.javawebtutor</groupId>
   <artifactId>LoginWebApp</artifactId>
-  <packaging>war</packaging>
-  <version>1.0.9-SNAPSHOT</version>
+  <packaging>jar</packaging>
+  <version>1.0.10-SNAPSHOT</version>
   <name>LoginWebApp Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
