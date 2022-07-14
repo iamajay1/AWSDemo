@@ -69,18 +69,16 @@
                             </artifactory>
                             
                           <distributionManagement>
-                            <repository>  
-                              <id>releases</id>
-                              <!-- CHANGE HERE by your team jfrog server -->
-                              <url>http://3.91.79.123:8082/artifactory/libs-release-local/</url>
-                             
-                            </repository>
+                                <repository>
+                                    <id>central</id>
+                                    <name>ip-172-31-31-82.ec2.internal-releases</name>
+                                    <url>http://3.91.79.123:8081/artifactory/libs-release-local</url>
+                                </repository>
                             <snapshotRepository>
-                              <id>snapshots</id>
-                              <!-- CHANGE HERE by your team jfrog server -->
-                              <url>http://3.91.79.123:8082/artifactory/libs-snapshot-local/</url>
-                              
-                             </snapshotRepository>
+                                <id>snapshots</id>
+                                <name>ip-172-31-31-82.ec2.internal-snapshots</name>
+                                <url>http://3.91.79.123:8081/artifactory/libs-snapshot-local</url>
+                            </snapshotRepository>
                           </distributionManagement>
                           
                                
