@@ -67,14 +67,19 @@
                                 <envVarsExcludePatterns>*password*,*secret*,*key*,*token*,*passphrase*</envVarsExcludePatterns>
                                 <timeoutSec>60</timeoutSec>
                             </artifactory>
-                            <publisher>
-                                <contextUrl>http://3.91.79.123:8082/artifactory/libs-snapshot-local/</contextUrl>
-                                <username>admin</username>
-                                <password>Ajay@9147</password>
-                                <repoKey>libs-release-local</repoKey>
-                                <snapshotRepoKey>libs-snapshot-local</snapshotRepoKey>
-                            </publisher>
-                          
+                            
+                          <distributionManagement>
+                            <repository>  
+                              <id>releases</id>
+                              <!-- CHANGE HERE by your team jfrog server -->
+                              <url>http://3.91.79.123:8082/artifactory/libs-release-local/</url>
+                            </repository>
+                            <snapshotRepository>
+                              <id>snapshots</id>
+                              <!-- CHANGE HERE by your team jfrog server -->
+                              <url>http://3.91.79.123:8082/artifactory/libs-snapshot-local/</url>
+                             </snapshotRepository>
+                          </distributionManagement>
                                
                            <buildInfo>
                                 <buildName>plugin-demo</buildName>
