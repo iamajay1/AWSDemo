@@ -68,7 +68,7 @@
                                 <timeoutSec>60</timeoutSec>
                             </artifactory>
                             <publisher>
-                                <contextUrl>http://34.224.82.14:8082/artifactory</contextUrl>
+                                <contextUrl>http://3.91.79.123:8082/artifactory</contextUrl>
                                 <username>admin</username>
                                 <password>Ajay@9147</password>
                                 <repoKey>libs-release-local</repoKey>
