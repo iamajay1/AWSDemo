@@ -67,13 +67,18 @@
                                 <envVarsExcludePatterns>*password*,*secret*,*key*,*token*,*passphrase*</envVarsExcludePatterns>
                                 <timeoutSec>60</timeoutSec>
                             </artifactory>
-                            <publisher>
-                                <contextUrl>http://3.91.79.123:8082/artifactory</contextUrl>
-                                <username>admin</username>
-                                <password>Ajay@9147</password>
-                                <repoKey>libs-release-local</repoKey>
-                                <snapshotRepoKey>libs-snapshot-local</snapshotRepoKey>
-                            </publisher>
+                            
+                          
+                               <repository>
+                                <id>releases</id>
+                                <!-- CHANGE HERE by your team nexus server -->
+                                  <url>http://3.91.79.123:8082/repository/maven-releases/</url>
+                                </repository>
+                                <snapshotRepository>
+                                 <id>snapshots</id>
+                                 <!-- CHANGE HERE by your team nexus server -->
+                                 <url>http://3.91.79.123:8082/repository/maven-snapshots/</url>
+                                </snapshotRepository>
                            <buildInfo>
                                 <buildName>plugin-demo</buildName>
                                 <buildNumber>${buildnumber}</buildNumber>
