@@ -71,12 +71,12 @@
                           <distributionManagement>
                                 <repository>
                                     <id>central</id>
-                                    <name>ip-172-31-31-82.ec2.internal-releases</name>
+                                    <name>libs-release</name>
                                     <url>http://3.91.79.123:8081/artifactory/libs-release-local</url>
                                 </repository>
                             <snapshotRepository>
                                 <id>snapshots</id>
-                                <name>ip-172-31-31-82.ec2.internal-snapshots</name>
+                                <name>libs-snapshot</name>
                                 <url>http://3.91.79.123:8081/artifactory/libs-snapshot-local</url>
                             </snapshotRepository>
                           </distributionManagement>
