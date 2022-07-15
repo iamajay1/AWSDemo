@@ -7,128 +7,30 @@
   <version>1.0.10-RELEASE</version>
   <name>LoginWebApp Maven Webapp</name>
   <url>http://maven.apache.org</url>
-  <dependencies>
+    
+    
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  
+  <distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>ip-172-31-28-135.ec2.internal-releases</name>
+        <url>http://174.129.83.172:8081/artifactory/libs-release-local</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>ip-172-31-28-135.ec2.internal-snapshots</name>
+        <url>http://174.129.83.172:8081/artifactory/libs-snapshot-local</url>
+    </snapshotRepository>
+</distributionManagement>
+  
+  
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.10</version>
       <scope>test</scope>
     </dependency>
-     <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>servlet-api</artifactId>
-            <version>2.5</version>
-        </dependency>
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.30</version>
-        </dependency>
-  </dependencies>
-  <build>
-    <finalName>JenkinsWar</finalName>
-  <pluginManagement>
-   <plugins>
-<plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-jar-plugin</artifactId>
-                    <version>2.4</version>
-                </plugin>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-war-plugin</artifactId>
-                    <version>2.4</version>
-                </plugin>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-source-plugin</artifactId>
-                    <version>2.1.2</version>
-                </plugin>
-            </plugins>
-        </pluginManagement>
-  <plugins>
-     <plugin>
-                <groupId>org.jfrog.buildinfo</groupId>
-                <artifactId>artifactory-maven-plugin</artifactId>
-                <version>2.6.1</version>
-                <inherited>false</inherited>
-                <executions>
-                    <execution>
-                        <id>build-info</id>
-                        <goals>
-                            <goal>publish</goal>
-                        </goals>
-                        <configuration>
-                            <deployProperties>
-                                <gradle>awesome</gradle>
-                            </deployProperties>
-                            <artifactory>
-                                <includeEnvVars>true</includeEnvVars>
-                                <envVarsExcludePatterns>*password*,*secret*,*key*,*token*,*passphrase*</envVarsExcludePatterns>
-                                <timeoutSec>60</timeoutSec>
-                            </artifactory>
-                            <publisher>
-                                <contextUrl>http://174.129.83.172:8082/artifactory/libs-snapshot-local/</contextUrl>
-                                <username>admin</username>
-                                <password>admin123</password>
-                                <repoKey>libs-release-local</repoKey>
-                                <snapshotRepoKey>libs-snapshot-local</snapshotRepoKey>
-                            </publisher>                    
-                           <buildInfo>
-                                <buildName>plugin-demo</buildName>
-                                <buildNumber>${buildnumber}</buildNumber>
-                                <buildUrl>https://build-url.org</buildUrl>
-                            </buildInfo>
-                            <licenses>
-                                <autoDiscover>true</autoDiscover>
-                                <includePublishedArtifacts>false</includePublishedArtifacts>
-                                <runChecks>true</runChecks>
-                                <scopes>compile,runtime</scopes>
-                                <violationRecipients>build@organisation.com</violationRecipients>
-                            </licenses>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <configuration>
-                    <archive>
-                        <addMavenDescriptor>false</addMavenDescriptor>
-                    </archive>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-war-plugin</artifactId>
-                <configuration>
-                    <archive>
-                        <addMavenDescriptor>false</addMavenDescriptor>
-                    </archive>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
-    <repositories>
-        <repository>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-            <id>central</id>
-            <name>bintray</name>
-            <url>https://jcenter.bintray.com</url>
-        </repository>
-    </repositories>
-    <pluginRepositories>
-        <pluginRepository>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-            <id>central</id>
-            <name>bintray-plugins</name>
-            <url>https://jcenter.bintray.com</url>
-        </pluginRepository>
-    </pluginRepositories>
-  
-</project>
+     
