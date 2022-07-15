@@ -72,7 +72,7 @@
                                 <repository>
                                     <id>internal.repo</id>
                                     <name>Internal repo</name>
-                                    <url>file://var/lib/jenkins/batch448Artifacts</url>
+                                    <url>file:///var/lib/jenkins/batch448Artifacts/</url>
                                 </repository>
                             
                           </distributionManagement>
