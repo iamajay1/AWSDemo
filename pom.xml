@@ -77,6 +77,7 @@
                                     <name>ip-172-31-28-135.ec2.internal-snapshots</name>
                                     <url>http://174.129.83.172:8081/artifactory/libs-snapshot-local</url>
                                 </snapshotRepository>
+                             </publisher> 
                            <buildInfo>
                                 <buildName>plugin-demo</buildName>
                                 <buildNumber>${buildnumber}</buildNumber>
