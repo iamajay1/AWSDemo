@@ -4,7 +4,7 @@
   <groupId>com.javawebtutor</groupId>
   <artifactId>LoginWebApp</artifactId>
   <packaging>jar</packaging>
-  <version>1.0.10-SNAPSHOT</version>
+  <version>1.0.10-RELEASE</version>
   <name>LoginWebApp Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
