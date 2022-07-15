@@ -68,7 +68,7 @@
                                 <timeoutSec>60</timeoutSec>
                             </artifactory>
                             <publisher>
-                                <contextUrl>http://174.129.83.172:8081/artifactory/libs-snapshot-local</contextUrl>
+                                <contextUrl>http://174.129.83.172:8082/artifactory/libs-snapshot-local/</contextUrl>
                                 <username>admin</username>
                                 <password>admin123</password>
                                 <repoKey>libs-release-local</repoKey>
